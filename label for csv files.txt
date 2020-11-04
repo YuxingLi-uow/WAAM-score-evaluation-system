@@ -1,0 +1,12 @@
+
+layer2_10, layer3_4, layer3_9 都是在焊接过程中有缺陷的数据。
+
+layer7_2, layer7_3 应该是没问题的数据。
+
+MildsteelDemoData 是以上数据的分析结果集合，加上标签：0为没问题数据，1为热输入不够的数据（类似undercut，会有一段的缩小效果）。
+
+feature_layer_tsne_with_arc_pre_time.csv: layer2 9, 13, 21, 32 和 layer 3 7, 18, 19, 23的合集用来观察 tsne, 这些数据过滤了先前设置的起弧时间
+
+feature_layer_tsne_no_pre_time.csv：layer2 10, 16, 30 和 layer 3 4, 14, 15, 27, 28的合集用来观察 tsne, 这些数据没有过滤起弧时间和熄弧时间
+
+feature_layer_tsne_with_time_scaled.csv: layer2 12, 16, 24的合集用来观察 tsne, 这些数据没有过滤起弧时间和熄弧时间
