@@ -1,2 +1,2 @@
 # WAAM-score-evaluation-system
-A score system used to extract current and voltage signals features in WAAM process, and then use segmented function to evaluate score and provide information indicating the existence of defects. 
+A score system is used to extract current and voltage signals features in WAAM process, and then a segmented function is designed to evaluate welding score and provide information which indicating the existence of defects. 
