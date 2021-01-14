@@ -1,9 +1,8 @@
 arc start time: 0.0
 arc stop time: 0.0
 data_time: 0.0004
-epoch: 30
+epoch: 100
 feature csv file: D:\Python Projects\Monitoring Project\Current_voltage_anomaly_detection\LabelData
-prev data num: 61
-state: val
+prev data num: 0
 threshold: 0.65
 window_len: 100

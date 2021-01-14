@@ -10,7 +10,8 @@ def run_gui(defect_class, params):
     # sys.exit(app.exec_())
     mainWindow.show()
     app.exec_()
-    return mainWindow.rect_region, mainWindow.bad_features, mainWindow.features, mainWindow.displaytext, mainWindow.save_flag, mainWindow.idle_stop, mainWindow.idle_start
+    return mainWindow.rect_region, mainWindow.bad_features, mainWindow.features, mainWindow.displaytext, \
+           mainWindow.save_flag, mainWindow.idle_stop, mainWindow.idle_start
 
 
 # comment: conclude labels from GUI, and save feature to file

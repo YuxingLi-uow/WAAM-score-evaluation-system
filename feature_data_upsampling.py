@@ -2,6 +2,8 @@ import pandas as pd
 import glob
 import numpy as np
 
+# this file is used to upsample the defect data
+
 def save_feature(features, feature_csv='MildsteelFeaturetest.csv'):
     with open(feature_csv, 'ab') as f:  # 将新的到的features append到文件中
         # np.savetxt(f, np.zeros((1,23)), fmt='%.6f', delimiter=',')
@@ -9,19 +11,19 @@ def save_feature(features, feature_csv='MildsteelFeaturetest.csv'):
         print('Data features and scores saved successful to {}'.format(feature_csv))
     f.close()
 
-floder_path = 'LabelData'
+floder_path = 'Kmeans'
 feature_path = glob.iglob(floder_path + '/*.csv')
 
 # feature_path = ['LabelData/feature_layer3 3.csv', 'LabelData/feature_layer3 5.csv']
 
 for path in feature_path:
     feature_array = pd.read_csv(path)
-    print('feature array shape',feature_array.shape)
+    print('feature array shape', feature_array.shape)
     # label_array = feature_array['label']
     # print('label array shape', label_array.shape)
     labeled_array = feature_array[feature_array['label'] > 0]
     labeled_array = labeled_array.to_numpy()
-    print(labeled_array.shape)
+    # print(labeled_array.shape)
 
     if labeled_array.shape[0] < 20:
         n = 30
